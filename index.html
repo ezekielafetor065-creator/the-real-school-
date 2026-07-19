@@ -2451,7 +2451,7 @@ async function requestPasswordReset(){
   const origBtnText=btn.textContent;
   btn.disabled=true;btn.textContent=t('loading');
   try{
-    await fetch(SUPABASE_URL+'/functions/v1/request-password-reset',{
+    await fetch(SUPABASE_URL+'/functions/v1/quick-endpoint',{
       method:'POST',
       headers:{'apikey':SUPABASE_KEY,'Authorization':'Bearer '+SUPABASE_KEY,'Content-Type':'application/json'},
       body:JSON.stringify({email})

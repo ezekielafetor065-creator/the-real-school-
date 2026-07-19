@@ -2843,7 +2843,7 @@ function renderSettingsProgress(){
   document.getElementById('statCoursesDone').textContent=completed;
   document.getElementById('statCerts').textContent=certs;
   // Books read
-  const bookNames={rdpd:'Rich Dad Poor Dad',pom:'Psychology of Money',rmb:'Richest Man in Babylon',tgr:'Think & Grow Rich',tmm:'Total Money Makeover',iwt:'I Will Teach You to Be Rich',mnd:'Millionaire Next Door',yml:'Your Money or Your Life',hwfip:'How to Win Friends and Influence People'};
+  const bookNames={rdpd:'Rich Dad Poor Dad',pom:'Psychology of Money',rmb:'Richest Man in Babylon',tgr:'Think & Grow Rich',tmm:'Total Money Makeover',iwt:'I Will Teach You to Be Rich',mnd:'Millionaire Next Door',yml:'Your Money or Your Life',hwfip:'How to Win Friends and Influence People',coai:'Co-Intelligence'};
   let readBooks=[];
   try{ readBooks=JSON.parse(localStorage.getItem('trs_books_opened_'+(currentUser?currentUser.email:''))||'[]'); }catch(e){ readBooks=[]; }
   if(!Array.isArray(readBooks))readBooks=[];
